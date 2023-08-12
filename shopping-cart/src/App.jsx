@@ -1,6 +1,7 @@
 import './App.css'
 import { useEffect,useState } from 'react'
 import Card from './Components/Card'
+import NavigationBar from './Components/NavigationBar'
 
 function App() {
   const [products,setProducts] = useState([])
@@ -13,6 +14,8 @@ function App() {
   },[])
   
   return (
+    <>
+    <NavigationBar />
     <div className='grid-container'>
       {
         products.map((product) => {
@@ -20,6 +23,7 @@ function App() {
         })
       }
     </div>
+    </>
   )
 }
 

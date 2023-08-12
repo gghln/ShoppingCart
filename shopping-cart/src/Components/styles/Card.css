@@ -3,8 +3,8 @@
     flex-direction: column;
     width:250px;
     height:500px;
-    border-style: solid;
     border-radius:1em;
+    background-color: whitesmoke;
     align-items: center;
 }
 
@@ -18,4 +18,22 @@
 .product-quantity-container{
     display: flex;
     flex-direction: row;
+}
+
+.product-name{
+    width: 100%;
+    height: 70px;
+    font-weight: bold;
+}
+
+.Add-to-cart{
+    margin-top: 30px;
+    padding: 10px;
+    border-style: none;
+    width: 100px;
+    height: 50px;
+    border-radius: 25px;
+    background-color: aqua;
+}.Add-to-cart:hover{
+    background-color: aquamarine;
 }
